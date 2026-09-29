@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Courses - Student Admin Dashboard</title>
+    <title>Students - Student Admin Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
     <div class="dashboard">
 
         <header class="header">
-            <h1>Courses</h1>
+            <h1>Students</h1>
 
             <div class="admin">
                 <span>Welcome, Admin</span>
@@ -29,9 +29,9 @@
 
             <nav>
                 <a href="index.html">Dashboard</a>
-                <a href="students.html">Students</a>
+                <a href="students.html" class="active">Students</a>
                 <a href="teachers.html">Teachers</a>
-                <a href="courses.html" class="active">Courses</a>
+                <a href="courses.html">Courses</a>
                 <a href="assignments.html">Assignments</a>
                 <a href="reports.html">Reports</a>
                 <a href="settings.html">Settings</a>
@@ -43,39 +43,67 @@
         <main class="main-content">
 
             <section class="welcome">
-                <h2>Courses</h2>
-                <p>Manage courses offered by the school.</p>
+                <h2>Students</h2>
+                <p>Manage and view all students.</p>
             </section>
 
 
-            <section class="cards">
+            <section class="students-section">
 
-                <div class="card">
-                    <div>
-                        <h3>Software Engineering</h3>
-                        <p>40 Students</p>
-                    </div>
+                <div class="section-header">
+                    <h2>Student List</h2>
+                    <button class="action-button">+ Add Student</button>
                 </div>
 
-                <div class="card">
-                    <div>
-                        <h3>Computer Science</h3>
-                        <p>30 Students</p>
-                    </div>
-                </div>
+                <div class="student-list">
 
-                <div class="card">
-                    <div>
-                        <h3>Information Technology</h3>
-                        <p>20 Students</p>
-                    </div>
-                </div>
+                    <div class="student">
+                        <div class="student-avatar">ZN</div>
 
-                <div class="card">
-                    <div>
-                        <h3>Database Management</h3>
-                        <p>10 Students</p>
+                        <div>
+                            <h3>ZANINKA Neema</h3>
+                            <p>Software Engineering</p>
+                        </div>
+
+                        <span class="status active-status">Active</span>
                     </div>
+
+
+                    <div class="student">
+                        <div class="student-avatar">A</div>
+
+                        <div>
+                            <h3>Alliance</h3>
+                            <p>Advanced Frontend</p>
+                        </div>
+
+                        <span class="status active-status">Active</span>
+                    </div>
+
+
+                    <div class="student">
+                        <div class="student-avatar">PK</div>
+
+                        <div>
+                            <h3>Patrick Kayitare</h3>
+                            <p>Information Technology</p>
+                        </div>
+
+                        <span class="status pending-status">Pending</span>
+                    </div>
+
+
+                    <div class="student">
+                        <div class="student-avatar">EM</div>
+
+                        <div>
+                            <h3>Eric Mugisha</h3>
+                            <p>Computer Science</p>
+                        </div>
+
+                        <span class="status active-status">Active</span>
+                    </div>
+
                 </div>
 
             </section>
